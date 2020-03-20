@@ -9,7 +9,7 @@ const SmurfList = (props) => {
         <div>
             {
                 props.data.map(item => 
-                        <Smurf smurf={item} deleteSmurfs={deleteSmurfs} />
+                        <Smurf smurf={item} />
                     )
             }
             <button variant='contained' onClick={props.fetchSmurf}> Get A Smurf </button>

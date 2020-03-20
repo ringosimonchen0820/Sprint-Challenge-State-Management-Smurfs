@@ -20,7 +20,7 @@ const Smurf = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        key: state
+        key: state.smurfs.id
     };
 }
 

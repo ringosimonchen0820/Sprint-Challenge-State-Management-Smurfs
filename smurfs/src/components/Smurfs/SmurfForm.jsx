@@ -42,7 +42,7 @@ const SmurfForm = (props) => {
                     onChange={handleChanges}
                     value={smurf.height} 
                 />
-                <button type='submit' onclick={() => props.addSmurfs(smurf)}>
+                <button type='submit' onClick={() => props.addSmurfs(smurf)}>
                     Submit
                 </button>
             </form>
@@ -53,7 +53,7 @@ const SmurfForm = (props) => {
 const mapStateToProps = (state) => {
     console.log('this is state', state.smurfs);
     return {
-        date: state.smurfs
+        state: state.smurfs
     };
 }
 
