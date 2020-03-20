@@ -1,7 +1,7 @@
 import React from 'react';
 import Smurf from './Smurf';
 import { connect } from 'react-redux';
-
+import { fetchSmurf, deleteSmurfs } from '../../actions/actions';
 
 const SmurfList = (props) => {
     console.log("SmurfList Props", props);
