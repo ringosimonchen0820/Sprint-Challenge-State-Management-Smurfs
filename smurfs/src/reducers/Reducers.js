@@ -1,8 +1,14 @@
-import { FETCHING_SMURF_START, FETCHING_SMURF_SUCCESS, ADD_SMURF,DELETE_SMURF } from '../actions/actions';
+import 
+    { 
+        FETCHING_SMURF_START, 
+        FETCHING_SMURF_SUCCESS, 
+        ADD_SMURF,
+        DELETE_SMURF 
+    } 
+    from '../actions/actions';
 
-export const initialState = {
-    smurf: [],
-};
+
+export const initialState = { smurf: [] };
 
 export const Reducer = (state = initialState, action) => {
     switch(action.type) {
