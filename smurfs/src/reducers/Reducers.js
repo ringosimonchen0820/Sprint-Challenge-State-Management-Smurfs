@@ -1,3 +1,5 @@
+import { FETCHING_SMURF_START, FETCHING_SMURF_SUCCESS, ADD_SMURF,DELETE_SMURF } from '../actions/actions';
+
 export const initialState = {
     smurf: [],
 };
@@ -24,6 +26,11 @@ export const Reducer = (state = initialState, action) => {
                     smurf
                 ]
             };
-
-    };
+        case DELETE_SMURF:
+            return {
+                smurfs: action.payload
+            };
+        default:
+            return state;
+    }
 }
