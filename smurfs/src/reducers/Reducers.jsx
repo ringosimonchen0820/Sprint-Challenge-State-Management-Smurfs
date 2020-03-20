@@ -8,7 +8,7 @@ import
     from '../actions/actions';
 
 
-export const initialState = { smurf: [] };
+export const initialState = { smurfs: [] };
 
 export const Reducer = (state = initialState, action) => {
     switch(action.type) {

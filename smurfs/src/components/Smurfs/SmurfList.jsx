@@ -18,6 +18,7 @@ const SmurfList = (props) => {
 }
 
 const mapStateToProps = (state) => {
+    console.log('this is state,', state.smurfs)
     return {
         data: state.smurfs
     };
