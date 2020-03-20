@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { deleteSmurfs } from '../actions/actions';
+import { deleteSmurfs } from '../../actions/actions';
 
 const Smurf = (props) => {
     console.log('this is props in Smurf', props); 
